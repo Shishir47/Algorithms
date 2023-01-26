@@ -34,6 +34,16 @@ public class Main {
 		System.out.println(wqu.connected(1, 4));
 		System.out.println(wqu.connected(0, 4));
 		
+		System.out.println("Weighted Quick Union with Path Compression, Fastest: ");
+		WQUPC wqupc= new WQUPC(5);
+		
+		wqupc.union(1, 3);
+		wqupc.union(4, 1);
+		wqupc.union(1, 2);
+		
+		System.out.println(wqupc.connected(0, 2));
+		System.out.println(wqupc.connected(1, 4));
+		System.out.println(wqupc.connected(0, 4));
 		
 	}
 }
